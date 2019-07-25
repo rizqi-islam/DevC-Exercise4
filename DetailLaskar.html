@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Laskar Pelangi</title>
+    <style>
+            span{
+                color: slategray;
+                line-height: 2.7em;
+                font-size: 25px;
+            }
+            .desc{
+                display: inline-block;
+            }
+            </style>
+</head>
+<body style="background-image: linear-gradient(#9fbcc2, #ddd6ca);">
+    <nav class="navbar navbar-light bg-light">
+        <a class="site-logo" href="index.html">
+          <img src="img/pustako.png" width="70" height="70" class="d-inline-block align-top">
+          <span>PUSTAKO</span>
+        </a>
+    </nav>
+
+    <h1 style="margin-left: 2%">Detail Buku</h1>
+    <img src="img/laskar-pelangi.jpg" style="width: 20%; height: 20%; margin-left: 2%; border-radius: 5%">
+    <div class="desc" style="margin-left: 5px;">
+        <p>
+        Judul : Laskar Pelangi <br>
+        Penulis : Andrea Hirata <br>
+        Penerbit : Bentang <br>
+        Kota Terbit : Yogyakarta <br>
+        TahunTerbit : 2007 <br>
+        Cetakan : III <br>
+        Tebal Buku : 533 halm. Termasuk juga tentang Penulis. <br>
+        ISBN : ISBN 979-3062-79-7 <br>
+        <button style="margin-top: 4%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Pinjam
+        </button>         
+        </p>
+    </div>
+    
+    <p style="margin-left: 2%; margin-top: 1%;">
+        Sinopsis: <br>
+            Novel ini mengisahkan tentang sepuluh anak Belitung yang tergabung dalam Laskar Pelangi mereka adalah Mahar, Ikal, Lintang, Harun, Syahdan,A Kiong,Trapani, Borek, Kucai dan satu-satunya wanita yaitu Sahara . Cerita ini mengisahkan tentang kehidupan di pedalaman Belitung yang kontras dan yang kaya akan timah, namun masyrakatnya tidak mampu memenuhi kehidupannya sehari-hari. Novel ini juga menceritakan tentang semangat juang dari anak-anak kampung Belitung untuk mengubah nasib mereka melalui sekolah. Sebagian besar orang tua mereka lebih senang melihat anak-anaknya membantunya dari pada belajar di sekolah.
+            <p style="margin-left: 2%">Kesulitan terus menerus membayangi sekolah kampung itu, sekolah yang dibangun atas jiwa ikhlas dan kepeloporan dua orang guru yaitu seorang Kepala Sekolah yang sudah tua yang bernama bapak Harfan Efendy Noor dan ibu guru muda yang bernama ibu Muslimah Hafsari yang juga sangat miskin berusaha mempertahankan semangat besar pendidikan. Sekolah yang nyaris dibubarkan oleh pengawas sekolah Depdikbud Sumsel karena kekurangan murid itu terselamatkan berkat seorang anak yang sepanjang masa bersekolah yang tak pernak mendapatkan rapot.</p>
+    </p>
+
+    <div class="container">
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Masukan Data Peminjam</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                  <div class="container">
+                          <form action="/action_page.php">
+                            <div class="form-group">
+                              <label for="nama">Nama Lengkap: </label>
+                              <input type="nama" class="form-control" id="nama" placeholder="Masukan Nama Lengkap" name="nama">
+                            </div>
+                            <div class="form-group">
+                              <label for="tlp">No Tlpn:</label>
+                              <input type="text" class="form-control" id="tlp" placeholder="Masukan No. Tlp" name="tlp">
+                            </div>
+                            <div class="form-group">
+                              <label for="nis">NIS:</label>
+                              <input type="text" class="form-control" id="nis" placeholder="Masukan NIS" name="nis">
+                            </div>
+                            <div class="form-group">
+                              <label for="kelas">Kelas:</label>
+                              <input type="text" class="form-control" id="kelas" placeholder="Masukan kelas" name="kelas">
+                            </div>
+                            <div class="form-group form-check">
+                              <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                        </div>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</body>
+</html>

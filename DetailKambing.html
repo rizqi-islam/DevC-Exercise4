@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Kambing Jantan</title>
+    <style>
+            span{
+                color: slategray;
+                line-height: 2.7em;
+                font-size: 25px;
+            }
+            .desc{
+                display: inline-block;
+            }
+            </style>
+</head>
+<body style="background-image: linear-gradient(#9fbcc2, #ddd6ca)">
+    <nav class="navbar navbar-light bg-light">
+        <a class="site-logo" href="index.html">
+            <img src="img/pustako.png" width="70" height="70" class="d-inline-block align-top">
+            <span>PUSTAKO</span>
+        </a>
+    </nav>
+    
+    <h1 style="margin-left: 2%">Detail Buku</h1>
+    <img src="img/kambing-jantan.jpg" style="width: 20%; height: 20%; margin-left: 2%; border-radius: 5%">
+<div class="desc" style="margin-left: 5px;">
+<p>
+    Judul: Kambing Jantan “Sebuah Catatan Pelajar Bodoh” <br>
+    Penulis: Raditya Dika <br>
+    Penerbit: Gagas Media <br>
+    Kota: Jakarta selatan <br>
+    Tanggal terbit: Cetakan pertama 2005, Cetakan kedua puluh delapan 2010 <br>
+    Jumlah halaman: 237 <br>
+    Desain cover: soft cover <br>
+    Kategori: Remaja/Umum <br>
+    Text Bahasa: Indonesia <br>
+    <button style="margin-top: 4%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Pinjam
+    </button>        
+</p>
+</div>
+<p style="margin-left: 2%; margin-top: 1%;">
+        Dalam buku novelnya ini Raditya Dika menceritakan kesehariannya menjadi seorang mahasiswa yang berkuliah di Adelaide, Australia. Hal yang tak pernah terfikirkan sama sekali olehnya. Apalagi dijurusan Finance. Itu keinginan ibunya. Sementara ayahnya menginginkan Radit untuk kuliah di jurusan kedokteran. Tapi dengan terpaksa Ia harus mengikuti ibunya yang menginginkan Radit untuk kuliah dijurusan finance berdasarkan hasil voting keluarganya. Harus jauh dari keluarga, teman, dan pacar merupakan hal yang harus ditanggungnya. Banyak cerita lucu namun ajaib dari kesehariannya menjadi mahasiswa di kota orang. Layaknya seorang anak kost. Tapi yang ini lebih elit. Karena kost diluar negeri.
+        <p style="margin-left: 2%">Menurut saya, ini novel bergenre komedi pertama yang diadaptasi dari sebuah blog yang berhasil mendulang kesuksesan. Karena setelah Radit banyak bermunculan generasi serupa yang menerbitkan buku yang diadaptasi dari sebuah blog pribadi.</p>
+</p>
+
+<div class="container">
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Masukan Data Peminjam</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+                <div class="container">
+                        <form action="/action_page.php">
+                          <div class="form-group">
+                            <label for="nama">Nama Lengkap: </label>
+                            <input type="nama" class="form-control" id="nama" placeholder="Masukan Nama Lengkap" name="nama">
+                          </div>
+                          <div class="form-group">
+                            <label for="tlp">No Tlpn:</label>
+                            <input type="text" class="form-control" id="tlp" placeholder="Masukan No. Tlp" name="tlp">
+                          </div>
+                          <div class="form-group">
+                            <label for="nis">NIS:</label>
+                            <input type="text" class="form-control" id="nis" placeholder="Masukan NIS" name="nis">
+                          </div>
+                          <div class="form-group">
+                            <label for="kelas">Kelas:</label>
+                            <input type="text" class="form-control" id="kelas" placeholder="Masukan kelas" name="kelas">
+                          </div>
+                          <div class="form-group form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>   
+  </div>
+</body>
+</html>
